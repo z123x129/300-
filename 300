@@ -1,0 +1,15 @@
+name: Daily Sign In
+ 
+on:
+  schedule:
+    - cron: '0 18 * * *' # 每天18点执行
+ 
+jobs:
+  sign-in:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sign In
+        run: |
+          URL="https://m300wxapp.jumpw.com/sign/ing?type=wx"
+          token="1010a43d30488e0a08c0f7b50f352980&guid=12292" # 如果需要的话
+          curl -H "Authorization: Bearer $TOKEN" -X POST $URL
