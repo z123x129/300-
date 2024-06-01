@@ -2,7 +2,7 @@ name: Daily Sign In
  
 on:
   schedule:
-    - cron: '0 18 * * *' # 每天早上8点执行
+    - cron: '42 17 * * *' # 每天早上8点执行
  
 jobs:
   sign-in:
