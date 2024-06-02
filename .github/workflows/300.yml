@@ -9,4 +9,4 @@ jobs:
     steps:
       - name: Sign in
         run: |
-          curl -X POST -H "Content-Type: application/json" -d '{"token": "7161fb770a77b604a15c5e362cdadc9a&guid=10611"}' https://m300wxapp.jumpw.com/sign/ing?type=wx
+          curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d 'token=7161fb770a77b604a15c5e362cdadc9a&guid=10611' https://m300wxapp.jumpw.com/sign/ing?type=wx
