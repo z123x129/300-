@@ -1,12 +1,12 @@
-# on:
-#   schedule:
-#     # 每分钟执行一次
-#     - cron: '*/1 * * * *'
+on:
+  schedule:
+    # 每分钟执行一次
+    - cron: '*/1 * * * *'
 
-# jobs:
-#   sign-in:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Sign in
-#         run: |
-#           curl -X POST -H "Content-Type: application/json" -d '{"token": "1010a43d30488e0a08c0f7b50f352980&guid=10611"}' https://m300wxapp.jumpw.com/sign/ing?type=wx
+jobs:
+  sign-in:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sign in
+        run: |
+          curl -X POST -H "Content-Type: application/json" -d '{"token": "1010a43d30488e0a08c0f7b50f352980&guid=10611"}' https://m300wxapp.jumpw.com/sign/ing?type=wx
