@@ -1,7 +1,7 @@
 on:
   schedule:
     # 每分钟执行一次
-    - cron: '*/1 * * * *'
+    - cron: '0 0 * * *'
 
 jobs:
   sign-in:
