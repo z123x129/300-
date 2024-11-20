@@ -2,7 +2,7 @@ name: Visit Page
  
 on:
   schedule:
-    - cron: '0 0 * * *' # 每天访问一次，可以根据需要调整cron表达式
+    - cron: '* * * * *' # 每天访问一次，可以根据需要调整cron表达式
  
 jobs:
   visit-page:
