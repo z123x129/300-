@@ -1,0 +1,15 @@
+name: Visit Page
+ 
+on:
+  schedule:
+    - cron: '0 2 * * *' # 每天访问一次，可以根据需要调整cron表达式
+ 
+jobs:
+  visit-page:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Visit Page
+      uses: peaceiris/actions-http-request@v1.2.0
+      with:
+        method: GET
+        url: http://wzbfpm.com/css/#/
