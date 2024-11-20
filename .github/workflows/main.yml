@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Visit Page
-      uses: peaceiris/actions-http-request@v1.2.0
+      uses: actions/checkout@v2
       with:
         method: GET
         url: http://wzbfpm.com/css/#/
